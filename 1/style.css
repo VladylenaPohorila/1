@@ -1,0 +1,100 @@
+.cubes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+.content {
+  display: flex;
+}
+.cube {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border: solid 5px black;
+  border-radius: 23%;
+  margin: 10px;
+  padding: 20px;
+}
+.point {
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.one_point {
+  justify-content: center;
+  align-items: center;
+}
+.two_points,
+.three_points,
+.six_points {
+  justify-content: space-between;
+}
+.two_points .point:nth-child(2) {
+  align-self: flex-end;
+}
+.three_points .point:nth-child(3) {
+  align-self: flex-end;
+}
+.three_points .point:nth-child(2) {
+  align-self: center;
+}
+.four_points,
+.five_points {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.center {
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .cube {
+    width: 150px;
+    height: 150px;
+  }
+  .point {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 667px) {
+  .cube {
+    width: 100px;
+    height: 100px;
+  }
+  .point {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .cube {
+    width: 80px;
+    height: 80px;
+  }
+  .point {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media (max-width: 430px) {
+  .cube {
+    width: 50px;
+    height: 50px;
+    border: solid 3px black;
+    padding: 10px;
+  }
+  .point {
+    width: 11px;
+    height: 11px;
+  }
+}
